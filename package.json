@@ -9,7 +9,7 @@
     "seed": "bun run src/seed.ts"
   },
   "devDependencies": {
-    "@types/bun": "latest",
+    "@types/bun": "^1.3.11",
     "@types/jsonwebtoken": "^9.0.10",
     "@types/nodemailer": "^7.0.11"
   },
