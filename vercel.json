@@ -1,18 +1,12 @@
 {
   "version": 2,
-  "builds": [
-    {
-      "src": "src/index.ts",
-      "use": "@vercel/static-build",
-      "config": {
-        "distDir": "build"
-      }
+  "functions": {
+    "api/index": {
+      "runtime": "bun",
+      "maxDuration": 10
     }
-  ],
+  },
   "routes": [
-    {
-      "src": "/(.*)",
-      "dest": "/src/index.ts"
-    }
+    { "src": "/(.*)", "dest": "/api/index" }
   ]
 }
